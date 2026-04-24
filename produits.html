@@ -3,208 +3,139 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Produits | Esther Accessoires</title>
-  <link rel="stylesheet" href="produits.css">
+
+  <title>Esther Accessoires | Élégance & Luxe</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-  <header class="header">
-    <h1 id="no">Nos Produits</h1>
-    <p>Bijoux & accessoires tendance</p>
-  </header>
+<!-- NAVBAR -->
+<nav class="navbar">
+  <h2>Esther</h2>
+  <a href="#produits">Produits</a>
+</nav>
 
-  <section class="products-grid">
+<!-- HERO -->
+<section class="hero">
+  <div class="overlay"></div>
+  <video autoplay muted loop>
+    <source src="images/video.mp4" type="video/mp4">
+  </video>
+
+  <div class="hero-content">
+    <h1>Esther Accessoires</h1>
+    <p>Des bijoux qui subliment votre beauté</p>
+    <a href="#produits" class="btn">Découvrir</a>
+  </div>
+</section>
+
+<!-- PRODUITS -->
+<section id="produits" class="products">
+
+  <h2>Nos Bijoux</h2>
+
+  <div class="grid">
 
     <!-- PRODUIT -->
-    <div class="product">
-      <img src="images/P.png" alt="Collier Perle Élégance">
-      <h3>Collier Perle Élégance</h3>
-      <p>15 000 FCFA</p>
-      <a href="https://wa.me/2250700000000?text=Bonjour%20Esther%20😊%0AJe%20suis%20intéressée%20par%20le%20produit%20:%20Collier%20Perle%20Élégance."
-         target="_blank"
-         class="btn">
-         Commander sur WhatsApp
-      </a>
+    <div class="card">
+      <div class="image-container">
+        <img src="images/P.png" data-images='["images/P.png","images/téléchargement.webp"]' data-current="0">
+        <button class="prev-btn" onclick="changeImage(this, -1)">&lt;</button>
+        <button class="next-btn" onclick="changeImage(this, 1)">&gt;</button>
+      </div>
+      <div class="info">
+        <h3>Collier Perle Élégance</h3>
+        <p>15 000 FCFA</p>
+        <a href="https://wa.me/2250545125373?text=Bonjour je veux ce collier" class="btn">Commander</a>
+      </div>
     </div>
 
-    <div class="product">
-      <img src="images/P.png" alt="Collier Perle Élégance">
-      <h3>Collier Perle Élégance</h3>
-      <p>15 000 FCFA</p>
-      <a href="https://wa.me/2250700000000?text=Bonjour%20Esther%20😊%0AJe%20suis%20intéressée%20par%20le%20produit%20:%20Collier%20Perle%20Élégance."
-         target="_blank"
-         class="btn">
-         Commander sur WhatsApp
-      </a>
-    </div>
-    <div class="product">
-      <img src="images/P.png" alt="Collier Perle Élégance">
-      <h3>Collier Perle Élégance</h3>
-      <p>15 000 FCFA</p>
-      <a href="https://wa.me/2250700000000?text=Bonjour%20Esther%20😊%0AJe%20suis%20intéressée%20par%20le%20produit%20:%20Collier%20Perle%20Élégance."
-         target="_blank"
-         class="btn">
-         Commander sur WhatsApp
-      </a>
-    </div>
-    <div class="product">
-      <img src="images/P.png" alt="Collier Perle Élégance">
-      <h3>Collier Perle Élégance</h3>
-      <p>15 000 FCFA</p>
-      <a href="https://wa.me/2250700000000?text=Bonjour%20Esther%20😊%0AJe%20suis%20intéressée%20par%20le%20produit%20:%20Collier%20Perle%20Élégance."
-         target="_blank"
-         class="btn">
-         Commander sur WhatsApp
-      </a>
-    </div>
-    <div class="product">
-      <img src="images/P.png" alt="Collier Perle Élégance">
-      <h3>Collier Perle Élégance</h3>
-      <p>15 000 FCFA</p>
-      <a href="https://wa.me/2250700000000?text=Bonjour%20Esther%20😊%0AJe%20suis%20intéressée%20par%20le%20produit%20:%20Collier%20Perle%20Élégance."
-         target="_blank"
-         class="btn">
-         Commander sur WhatsApp
-      </a>
-    </div>
-    <div class="product">
-      <img src="images/P.png" alt="Collier Perle Élégance">
-      <h3>Collier Perle Élégance</h3>
-      <p>15 000 FCFA</p>
-      <a href="https://wa.me/2250700000000?text=Bonjour%20Esther%20😊%0AJe%20suis%20intéressée%20par%20le%20produit%20:%20Collier%20Perle%20Élégance."
-         target="_blank"
-         class="btn">
-         Commander sur WhatsApp
-      </a>
-    </div>
-    <div class="product">
-      <img src="images/P.png" alt="Collier Perle Élégance">
-      <h3>Collier Perle Élégance</h3>
-      <p>15 000 FCFA</p>
-      <a href="https://wa.me/2250700000000?text=Bonjour%20Esther%20😊%0AJe%20suis%20intéressée%20par%20le%20produit%20:%20Collier%20Perle%20Élégance."
-         target="_blank"
-         class="btn">
-         Commander sur WhatsApp
-      </a>
-    </div>
-    <div class="product">
-      <img src="images/P.png" alt="Collier Perle Élégance">
-      <h3>Collier Perle Élégance</h3>
-      <p>15 000 FCFA</p>
-      <a href="https://wa.me/2250700000000?text=Bonjour%20Esther%20😊%0AJe%20suis%20intéressée%20par%20le%20produit%20:%20Collier%20Perle%20Élégance."
-         target="_blank"
-         class="btn">
-         Commander sur WhatsApp
-      </a>
-    </div>
-    <div class="product">
-      <img src="images/P.png" alt="Collier Perle Élégance">
-      <h3>Collier Perle Élégance</h3>
-      <p>15 000 FCFA</p>
-      <a href="https://wa.me/2250700000000?text=Bonjour%20Esther%20😊%0AJe%20suis%20intéressée%20par%20le%20produit%20:%20Collier%20Perle%20Élégance."
-         target="_blank"
-         class="btn">
-         Commander sur WhatsApp
-      </a>
-    </div>
-    <div class="product">
-      <img src="images/P.png" alt="Collier Perle Élégance">
-      <h3>Collier Perle Élégance</h3>
-      <p>15 000 FCFA</p>
-      <a href="https://wa.me/2250700000000?text=Bonjour%20Esther%20😊%0AJe%20suis%20intéressée%20par%20le%20produit%20:%20Collier%20Perle%20Élégance."
-         target="_blank"
-         class="btn">
-         Commander sur WhatsApp
-      </a>
-    </div>
-    <div class="product">
-      <img src="images/P.png" alt="Collier Perle Élégance">
-      <h3>Collier Perle Élégance</h3>
-      <p>15 000 FCFA</p>
-      <a href="https://wa.me/2250700000000?text=Bonjour%20Esther%20😊%0AJe%20suis%20intéressée%20par%20le%20produit%20:%20Collier%20Perle%20Élégance."
-         target="_blank"
-         class="btn">
-         Commander sur WhatsApp
-      </a>
-    </div>
-    <div class="product">
-      <img src="images/P.png" alt="Collier Perle Élégance">
-      <h3>Collier Perle Élégance</h3>
-      <p>15 000 FCFA</p>
-      <a href="https://wa.me/2250700000000?text=Bonjour%20Esther%20😊%0AJe%20suis%20intéressée%20par%20le%20produit%20:%20Collier%20Perle%20Élégance."
-         target="_blank"
-         class="btn">
-         Commander sur WhatsApp
-      </a>
-    </div>
-    <div class="product">
-      <img src="images/P.png" alt="Collier Perle Élégance">
-      <h3>Collier Perle Élégance</h3>
-      <p>15 000 FCFA</p>
-      <a href="https://wa.me/2250700000000?text=Bonjour%20Esther%20😊%0AJe%20suis%20intéressée%20par%20le%20produit%20:%20Collier%20Perle%20Élégance."
-         target="_blank"
-         class="btn">
-         Commander sur WhatsApp
-      </a>
-    </div>
-    <div class="product">
-      <img src="images/P.png" alt="Collier Perle Élégance">
-      <h3>Collier Perle Élégance</h3>
-      <p>15 000 FCFA</p>
-      <a href="https://wa.me/2250700000000?text=Bonjour%20Esther%20😊%0AJe%20suis%20intéressée%20par%20le%20produit%20:%20Collier%20Perle%20Élégance."
-         target="_blank"
-         class="btn">
-         Commander sur WhatsApp
-      </a>
-    </div>
-    <div class="product">
-      <img src="images/P.png" alt="Collier Perle Élégance">
-      <h3>Collier Perle Élégance</h3>
-      <p>15 000 FCFA</p>
-      <a href="https://wa.me/2250700000000?text=Bonjour%20Esther%20😊%0AJe%20suis%20intéressée%20par%20le%20produit%20:%20Collier%20Perle%20Élégance."
-         target="_blank"
-         class="btn">
-         Commander sur WhatsApp
-      </a>
-    </div>
-    <div class="product">
-      <img src="images/P.png" alt="Collier Perle Élégance">
-      <h3>Collier Perle Élégance</h3>
-      <p>15 000 FCFA</p>
-      <a href="https://wa.me/2250700000000?text=Bonjour%20Esther%20😊%0AJe%20suis%20intéressée%20par%20le%20produit%20:%20Collier%20Perle%20Élégance."
-         target="_blank"
-         class="btn">
-         Commander sur WhatsApp
-      </a>
-    </div>
-    <div class="product">
-      <img src="images/P.png" alt="Collier Perle Élégance">
-      <h3>Collier Perle Élégance</h3>
-      <p>15 000 FCFA</p>
-      <a href="https://wa.me/2250700000000?text=Bonjour%20Esther%20😊%0AJe%20suis%20intéressée%20par%20le%20produit%20:%20Collier%20Perle%20Élégance."
-         target="_blank"
-         class="btn">
-         Commander sur WhatsApp
-      </a>
-    </div>
-    <div class="product">
-      <img src="images/P.png" alt="Collier Perle Élégance">
-      <h3>Collier Perle Élégance</h3>
-      <p>15 000 FCFA</p>
-      <a href="https://wa.me/2250700000000?text=Bonjour%20Esther%20😊%0AJe%20suis%20intéressée%20par%20le%20produit%20:%20Collier%20Perle%20Élégance."
-         target="_blank"
-         class="btn">
-         Commander sur WhatsApp
-      </a>
+    <!-- PRODUIT -->
+    <div class="card">
+      <div class="image-container">
+        <img src="images/téléchargement.webp" data-images='["images/téléchargement.webp","images/P.png"]' data-current="0">
+        <button class="prev-btn" onclick="changeImage(this, -1)">&lt;</button>
+        <button class="next-btn" onclick="changeImage(this, 1)">&gt;</button>
+      </div>
+      <div class="info">
+        <h3>Boucles d'Oreilles Diamant</h3>
+        <p>20 000 FCFA</p>
+        <a href="https://wa.me/2250545125373?text=Bonjour je veux ces boucles d'oreilles" class="btn">Commander</a>
+      </div>
     </div>
 
-    <!-- DUPLIQUE CE BLOC POUR 20–25 PRODUITS -->
+    <!-- PRODUIT -->
+    <div class="card">
+      <div class="image-container">
+        <img src="images/P.png" data-images='["images/P.png","images/téléchargement.webp"]' data-current="0">
+        <button class="prev-btn" onclick="changeImage(this, -1)">&lt;</button>
+        <button class="next-btn" onclick="changeImage(this, 1)">&gt;</button>
+      </div>
+      <div class="info">
+        <h3>Bracelet Or Rose</h3>
+        <p>25 000 FCFA</p>
+        <a href="https://wa.me/2250545125373?text=Bonjour je veux ce bracelet" class="btn">Commander</a>
+      </div>
+    </div>
 
-  </section>
+    <!-- PRODUIT -->
+    <div class="card">
+      <div class="image-container">
+        <img src="images/téléchargement.webp" data-images='["images/téléchargement.webp","images/P.png"]' data-current="0">
+        <button class="prev-btn" onclick="changeImage(this, -1)">&lt;</button>
+        <button class="next-btn" onclick="changeImage(this, 1)">&gt;</button>
+      </div>
+      <div class="info">
+        <h3>Collier Chaîne Deluxe</h3>
+        <p>30 000 FCFA</p>
+        <a href="https://wa.me/2250545125373?text=Bonjour je veux ce collier chaîne" class="btn">Commander</a>
+      </div>
+    </div>
 
-  <footer class="footer">
-    <p>© 2026 – Esther Accessoires</p>
-  </footer>
+    <!-- PRODUIT -->
+    <div class="card">
+      <div class="image-container">
+        <img src="images/P.png" data-images='["images/P.png","images/téléchargement.webp"]' data-current="0">
+        <button class="prev-btn" onclick="changeImage(this, -1)">&lt;</button>
+        <button class="next-btn" onclick="changeImage(this, 1)">&gt;</button>
+      </div>
+      <div class="info">
+        <h3>Bague Saphir</h3>
+        <p>18 000 FCFA</p>
+        <a href="https://wa.me/2250545125373?text=Bonjour je veux cette bague" class="btn">Commander</a>
+      </div>
+    </div>
+
+    <!-- PRODUIT -->
+    <div class="card">
+      <div class="image-container">
+        <img src="images/téléchargement.webp" data-images='["images/téléchargement.webp","images/P.png"]' data-current="0">
+        <button class="prev-btn" onclick="changeImage(this, -1)">&lt;</button>
+        <button class="next-btn" onclick="changeImage(this, 1)">&gt;</button>
+      </div>
+      <div class="info">
+        <h3>Pendentif Cœur</h3>
+        <p>12 000 FCFA</p>
+        <a href="https://wa.me/2250545125373?text=Bonjour je veux ce pendentif" class="btn">Commander</a>
+      </div>
+    </div>
+
+<script>
+function changeImage(button, direction) {
+  const container = button.parentElement;
+  const img = container.querySelector('img');
+  const images = JSON.parse(img.getAttribute('data-images'));
+  let current = parseInt(img.getAttribute('data-current'));
+  current += direction;
+  if (current < 0) current = images.length - 1;
+  if (current >= images.length) current = 0;
+  img.src = images[current];
+  img.setAttribute('data-current', current);
+}
+</script>
 
 </body>
 </html>
